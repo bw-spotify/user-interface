@@ -8,8 +8,9 @@
             height: 500px;
         }
         .tab-page{
-            width: 500px;
+            width: 100%;
             margin-top: 50px;
+            
         }
         ul.tabs{
 			margin: 0px;
@@ -41,12 +42,14 @@
             border: 1px solid @navigation-border;
             border-radius: 0 10px 0 10px;
             
+            
         }
         
 
 		.tab-content.current{
             display: inherit;
             box-shadow: 5px 5px 18px #dfdfdf;
+            
 		}
     }
 }
@@ -56,22 +59,32 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .work{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+    .work-container{
         
-        img{
-            width: 150px;
-            height: 150px;
+        .work{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            
+            
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            
         }
-        .tab-content{
-            padding: 0 20px;
-        }
+        
     }
+    
 }
+
+
+
+
