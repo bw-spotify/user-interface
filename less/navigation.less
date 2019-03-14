@@ -9,6 +9,45 @@
         -webkit-transition: height .5s, line-height .5s; /* Safari */
         transition: height .5s, line-height .5s;
         z-index: 9999;
+        .circle{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // margin-top: -10px;
+            .cir1{
+                
+                i{
+                    color: #fff;
+                    font-size: 2rem;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: @main-btn;
+                    text-align: center;
+                    padding: 10px;
+                    &:hover{
+                        background: #fff;
+                        color: @main-btn;
+                    }
+                }
+            }
+           
+            .logo{
+                color:#fff;
+                font-size: 2.8rem;
+                margin: 0 10px;
+                // margin-top: 3px;
+                text-transform: uppercase;
+                font-family: 'Open Sans Condensed', sans-serif;
+                letter-spacing: 2px;
+                font-weight: 800;
+                text-decoration: none;
+                font-style: none;
+                &:hover{
+                    color: @main-btn;
+                }
+            }
+        }
         
 
 
@@ -63,6 +102,7 @@
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease 0s;
             outline: none;
+            font-size: 1.2rem;
 
             &:hover{
                 background-color: @button-hover;
@@ -73,9 +113,145 @@
             }
         }
     }
+
+}
+
+
+.mobile-nav{
+    display: none;
+    i{
+        font-size: 4rem;
+        color: @main-btn;
+        
+
+        &:hover{
+            color: #fff;
+        }
+    }
 }
 
 
   
 
 
+@media (min-width: 481px) and (max-width: 1024px){
+    .navContainer {
+        height: 30%;
+        .circle{
+            // display: flex;
+            
+            
+            margin-top: 10px;
+            padding: 20px 150px;
+            .cir1{
+                
+                i{
+                    color: #fff;
+                    font-size: 2rem;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: @main-btn;
+                    text-align: center;
+                    padding: 10px;
+                    float: l
+                    
+                }
+            }
+           
+            .logo{
+                color:#fff;
+                font-size: 2.8rem;
+                text-transform: uppercase;
+                font-family: 'Open Sans Condensed', sans-serif;
+                letter-spacing: 2px;
+                font-weight: 800;
+                text-decoration: none;
+                font-style: none;
+                &:hover{
+                    color: @main-btn;
+                }
+            }
+        }
+        flex-direction: column;
+        display: flex;
+        .nav-btn{
+            nav{
+                justify-content: space-around;
+                display: flex;
+                a{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 2rem;
+                
+                }
+                .line{
+                    
+                    // display: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .navContainer {
+        height: 30%;
+        .circle{
+            // display: flex;
+            
+            
+            margin-top: 10px;
+            padding: 20px 85px;
+            .cir1{
+                
+                i{
+                    color: #fff;
+                    font-size: 2rem;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: @main-btn;
+                    text-align: center;
+                    padding: 10px;
+                    float: l
+                    
+                }
+            }
+           
+            .logo{
+                color:#fff;
+                font-size: 2.8rem;
+                text-transform: uppercase;
+                font-family: 'Open Sans Condensed', sans-serif;
+                letter-spacing: 2px;
+                font-weight: 800;
+                text-decoration: none;
+                font-style: none;
+                &:hover{
+                    color: @main-btn;
+                }
+            }
+        }
+        flex-direction: column;
+        display: flex;
+        .nav-btn{
+            nav{
+                // justify-content: space-around;
+                display: flex;
+                a{
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 12px;
+                
+                }
+                .line{
+                    
+                    display: none;
+                }
+            }
+        }
+    }
+}
