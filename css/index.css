@@ -823,7 +823,11 @@ footer .social i:hover {
     display: inline-block;
     padding: 5px 10px;
     font-size: 1.4rem;
-    border-radius: 5px 0 0 0;
+    /* border-radius: 5px 0 0 0; */
+  }
+  .work-container .work .tab-page {
+    width: 100%;
+    margin-top: 50px;
   }
   .work {
     display: flex;
@@ -838,8 +842,12 @@ footer .social i:hover {
     display: inline-block;
     padding: 5px 10px;
     font-size: 1.4rem;
-    border-radius: 5px 0 0 0;
+    /* border-radius: 5px 0 0 0; */
     /* margin: 0 10px; */
+  }
+  .work-container .work .tab-page {
+    width: 100%;
+    margin-top: 50px;
   }
   .work-container .work .tab-content.current {
     padding: 20px 20px;
