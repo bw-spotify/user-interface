@@ -794,7 +794,7 @@ footer .social i:hover {
   background: #1DB954;
   color: #fff;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 20px;
   cursor: pointer;
   font-size: 1.8rem;
   border-radius: 10px 0 0 0;
@@ -817,6 +817,14 @@ footer .social i:hover {
   box-shadow: 5px 5px 18px #dfdfdf;
 }
 @media (min-width: 481px) and (max-width: 1024px) {
+  .work-container .work ul.tabs li {
+    background: #1DB954;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    border-radius: 5px 0 0 0;
+  }
   .work {
     display: flex;
     flex-direction: column;
@@ -824,12 +832,25 @@ footer .social i:hover {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  .work-container .work {
+  .work-container .work ul.tabs li  {
+    background: #1DB954;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    border-radius: 5px 0 0 0;
+    /* margin: 0 10px; */
+  }
+  .work-container .work .tab-content.current {
+    padding: 20px 20px;
+    /* margin: 0 10px; */
+  }
+  .work {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-  .work-container .work img {
+  .work img {
     width: 150px;
     height: 150px;
   }

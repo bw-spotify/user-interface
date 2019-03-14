@@ -55,6 +55,15 @@
 }
 
 @media (min-width: 481px) and (max-width: 1024px){
+    ul.tabs li{
+        background: @main-btn;
+        color: #fff;
+        display: inline-block;
+        // padding: 5px 10px;
+        font-size: 1.4rem;
+        border-radius: 5px 0 0 0;
+
+    }
     .work{
         display: flex;
         flex-direction: column;
@@ -65,7 +74,16 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .work-container{
+    ul.tabs li{
+        background: @main-btn;
+        color: #fff;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 1.4rem;
+        border-radius: 5px 0 0 0;
+
+    }
+    
         
         .work{
             display: flex;
@@ -78,19 +96,10 @@
                 width: 150px;
                 height: 150px;
             }
-            ul.tabs li{
-                background: @main-btn;
-                color: #fff;
-                display: inline-block;
-                padding: 5px 10px;
-                font-size: 1.4rem;
-                border-radius: 5px 0 0 0;
-    
-            }
+           
             
         }
         
-    }
     
 }
 
